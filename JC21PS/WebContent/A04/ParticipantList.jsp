@@ -42,7 +42,7 @@ th {
 				</tr>
 			</tbody>
 		</table>
-		<%--TODO
+		<%--TODOあ
   		for文を完成させなさい。
   		ヒント
   		size()メソッドでListの要素数を取得することができる
