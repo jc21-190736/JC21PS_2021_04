@@ -25,7 +25,7 @@ public class ParticipantListBean implements Serializable {
 	}
 
 	/**
-	 * @return activityNameあ
+	 * @return activityName
 	 */
 	public String getActivityName() {
 		return activityName;
