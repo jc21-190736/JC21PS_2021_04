@@ -40,43 +40,45 @@ th {
 				<tr>
 					<td><%=bean.getActivityName()%></td>
 				</tr>
-				<tr>
-					<th>参加者一覧</th>
-				</tr>
-				<%--TODO
+			</tbody>
+		</table>
+		<%--TODO
   		for文を完成させなさい。
   		ヒント
   		size()メソッドでListの要素数を取得することができる
   		 --%>
 
-<%
-					for (int j = 0; j < bean.getParticipantList().size(); j++) {
-						System.out.println("<p>" + bean.getParticipantList().get(j) + "</p>");
-						%>
 
-				<%--TODO
+
+
+		<%--TODO
  			参加者名の一覧が表示されるように実装しなさい。
  			ヒント
  			Listの要素はget(【番号】)で取得することができる。
  			 --%>
-				<tr>
-					<th scope="col">参加者名</th>
-				</tr>
+		<div style='width: 60%; margin: auto'>
+			<table class='table table-bordered'>
+				<tbody>
+					<tr>
+						<th scope="col">参加者名</th>
+					</tr>
 
-				<tr>
-				<%
-					for (int j = 0; j < bean.getParticipantList().size(); j++) {
-					"<th scope="row">"System.out.println(bean.getParticipantList().get(j));
-					"</th>"
-				}
-				%>
-			</tbody>
-		</table>
-	</div>
-	<div align="center">
-		<input type='button' value='戻る'
-			onclick="location.href='/JC21PS/TopController'"
-			class="btn btn-primary" />
-	</div>
+					<tr>
+						<td>
+							<%
+								for (int j = 0; j < bean.getParticipantList().size(); j++) {
+									out.println("<p>" + bean.getParticipantList().get(j) + "</p>");
+								}
+							%>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div align="center">
+			<input type='button' value='戻る'
+				onclick="location.href='/JC21PS/TopController'"
+				class="btn btn-primary" />
+		</div>
 </body>
 </html>
