@@ -35,7 +35,7 @@ public class ParticipantListControllerServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// 共通チェッあ
 		if (!CommonCheck.existSession(request)) {
-			// セッションが切れてる場合はログイン画面に遷移
+			// セッションが切れてる場合はログイン画面に遷移a
 			request.getRequestDispatcher("/Login").forward(request, response);
 		}
 

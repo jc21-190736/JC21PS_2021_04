@@ -47,7 +47,7 @@ public class ParticipantListBean implements Serializable {
 	}
 
 	/**
-	 * @param participantList セットする participantList
+	 * @param participantList セットする participantLista
 	 */
 	public void setParticipantList(List<String> participantList) {
 		this.participantList = participantList;

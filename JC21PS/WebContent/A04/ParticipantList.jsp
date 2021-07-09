@@ -26,7 +26,7 @@ th {
 	<jsp:include page="/A00/Header.jsp"></jsp:include>
 
 	<%
-		// メッセージがある場合は表示s
+		// メッセージがある場合は表示
 		for (int i = 0; i < messageBean.getMessageList().size(); i++) {
 			out.println("<p>" + messageBean.getMessageList().get(i) + "</p>");
 		}
