@@ -9,10 +9,10 @@ import java.util.List;
  */
 public class ParticipantListBean implements Serializable {
 
-	// 活動名a
+	// 活動
 
 	private String activityName;
-	// 参加者リスト
+	// 参加者リ
 	private List<String> participantList;
 
 	/**
@@ -47,7 +47,7 @@ public class ParticipantListBean implements Serializable {
 	}
 
 	/**
-	 * @param participantList セットする participantLista
+	 * @param participantList セットする participantList
 	 */
 	public void setParticipantList(List<String> participantList) {
 		this.participantList = participantList;
