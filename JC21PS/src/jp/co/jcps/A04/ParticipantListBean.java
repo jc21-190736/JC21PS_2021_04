@@ -12,7 +12,7 @@ public class ParticipantListBean implements Serializable {
 	// 活動
 
 	private String activityName;
-	// 参加者リ
+	// 参加者
 	private List<String> participantList;
 
 	/**
