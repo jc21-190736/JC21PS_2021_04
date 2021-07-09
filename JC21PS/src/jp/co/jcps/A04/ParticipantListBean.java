@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 参加者一覧画面のB
+ * 参加者一覧画面の
  */
 public class ParticipantListBean implements Serializable {
 
