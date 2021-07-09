@@ -29,7 +29,7 @@ public class ParticipantListControllerServlet extends HttpServlet {
 	}
 
 	/**
-	 * GETメソッドでリクエストされた
+	 * GETメソッドでリクエストされ
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
