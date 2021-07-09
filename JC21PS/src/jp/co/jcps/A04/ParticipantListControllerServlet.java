@@ -29,13 +29,13 @@ public class ParticipantListControllerServlet extends HttpServlet {
 	}
 
 	/**
-	 * GETメソッドでリクエストされた場合の処理
+	 * GETメソッドでリクエストされた場合
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 共通チェッあ
 		if (!CommonCheck.existSession(request)) {
-			// セッションが切れてる場合はログイン画面に遷移a
+			// セッションが切れてる場合は
 			request.getRequestDispatcher("/Login").forward(request, response);
 		}
 
