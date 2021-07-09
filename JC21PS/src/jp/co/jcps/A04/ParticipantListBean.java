@@ -16,7 +16,7 @@ public class ParticipantListBean implements Serializable {
 	private List<String> participantList;
 
 	/**
-	 * コンストラクタ
+	 * コンストラク
 	 *
 	 */
 	public ParticipantListBean() {
