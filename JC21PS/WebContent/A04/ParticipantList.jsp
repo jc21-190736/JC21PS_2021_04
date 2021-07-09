@@ -26,7 +26,7 @@ th {
 	<jsp:include page="/A00/Header.jsp"></jsp:include>
 
 	<%
-		// メッセージがある
+		// メッセージが
 		for (int i = 0; i < messageBean.getMessageList().size(); i++) {
 			out.println("<p>" + messageBean.getMessageList().get(i) + "</p>");
 		}
@@ -56,7 +56,7 @@ th {
  			ヒント
  			Listの要素はget(【番号】)で取得することができる。
  			 --%>
-		<div style='width: 60%; margin: auto'>
+		<div >
 			<table class='table table-bordered'>
 				<tbody>
 					<tr>
