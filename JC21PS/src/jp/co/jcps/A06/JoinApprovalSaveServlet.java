@@ -82,6 +82,7 @@ public class JoinApprovalSaveServlet extends HttpServlet {
 		paramList.add(registClubId);
 		paramList.add(registUserId);
 
+
 		// SQLを実行し結果を取得
 		DBConnection db = new DBConnection();
 		db.executeInsertUpdateQuery(sql, paramList);
