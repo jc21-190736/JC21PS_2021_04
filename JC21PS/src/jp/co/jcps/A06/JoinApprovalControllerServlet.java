@@ -53,6 +53,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 		 */
 		paramList.add(leaderClubId);
 
+
 		// DB接続を初期化
 		DBConnection db = new DBConnection();
 
