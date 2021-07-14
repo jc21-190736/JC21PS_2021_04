@@ -74,14 +74,13 @@ public class JoinApprovalSaveServlet extends HttpServlet {
 
 		//SQLを宣言
 		// TODO: SQL文を完成させなさい。
-		String sql = "INSERT INTO trn_club_member VARUES(registClubId,registUserId);";
+		String sql = "INSERT INTO trn_club_member VALUES(registClubId,registUserId,null);";
 
 		// SQLに埋め込むパラメータリストを定義
 		List<String> paramList = new ArrayList<String>();
 		// TODO: SQLに埋め込む値をparamListに設定しなさい。
-		paramList.add( sql = "");
-
-
+		paramList.add(registClubId);
+		paramList.add(registUserId);
 
 		// SQLを実行し結果を取得
 		DBConnection db = new DBConnection();
@@ -98,12 +97,13 @@ public class JoinApprovalSaveServlet extends HttpServlet {
 
 		//SQLを宣言
 		// TODO: SQL文を完成させなさい。
-		String sql = "DELETE FROM trn_join_request WHERE user_id = registUserId";
+		String sql = "DELETE FROM trn_join_request WHERE user_id = registUserId;";
 
 		// SQLに埋め込むパラメータリストを定義
 		List<String> paramList = new ArrayList<String>();
 		// TODO: SQLに埋め込む値をparamListに設定しなさい。
-
+		paramList.add(registClubId);
+		paramList.add(registUserId);
 
 		// SQLを実行し結果を取得
 		DBConnection db = new DBConnection();
